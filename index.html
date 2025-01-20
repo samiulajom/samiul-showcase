@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic page need meta data =============================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Site tittle ============================================================== -->
+    <title>Samiul Ajom | Resume & Portfolio</title>
+    <!-- fav icon =================================================================-->
+    <!-- <link rel="icon" href="image/logo/samiul-logo.png" type="image/png" /> -->
+    <link rel="icon" href="image/logo/s-favicon.jpg" type="image/jpg" />
+    <!--Google Fonts ==============================================================-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawsome ================================================================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Line progressbar =========================================================== -->
+    <link rel="stylesheet" href="./css/jquery.lineProgressbar.css" />
+    <!--Swiper js cdn =================================================================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--All External CSS =============================================================-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="dark">
+    <!--!EXTRA PART OF WEB PAGE START *******************************-->
+    <!--Scroll top start================================= -->
+    <span id="top-id"></span>
+    <!--Scroll top end ================================== -->
+    <!--Background Line Animation start ==================-->
+    <div class="line-parent">
+      <div class="line line-1">
+        <div class="line-box"></div>
+      </div>
+      <div class="line line-2">
+        <div class="line-box"></div>
+      </div>
+      <div class="line line-3">
+        <div class="line-box"></div>
+      </div>
+      <div class="line line-4">
+        <div class="line-box"></div>
+      </div>
+    </div>
+    <!--Background Line Animation end ====================-->
+    <!-- Scroll parsentage Animation start ===============-->
+    <div class="circle-container">
+      <a href="#top-id" class="circle">
+        <div class="percentage">0%</div>
+        <div class="arrow">
+          <span><i class="fa-solid fa-arrow-up fa-bounce"></i></span>
+        </div>
+      </a>
+    </div>
+    <div class="out-circle"></div>
+    <!-- Scroll parsentage Animation end =================-->
+    <!--Custome Cursor start ============================ -->
+    <div class="cursor"></div>
+    <div class="cursor-small"></div>
+    <!--Custome Cursor end ============================== -->
+    <!-- Setting-pannel start ============================-->
+    <div class="setting-pannel">
+      <!-- setting start ===============-->
+      <div class="setting">
+        <span> <i class="fa-solid fa-gear fa-spin"></i></span>
+      </div>
+      <!-- setting end =================-->
+      <!-- Theme start =================-->
+      <div class="theme-pannel">
+        <h5>Theme:</h5>
+        <ul class="theme-mode">
+          <li class="dark-mode">
+            <i class="fa-solid fa-moon"></i>
+          </li>
+          <li class="light-mode">
+            <i class="fa-regular fa-sun"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- Theme end ===================-->
+      <!-- color pannel start ======== -->
+      <!-- color pannel end ========= -->
+      <div class="color-panel">
+        <label for="color-state">
+          <h5>color:</h5>
+          <select class="color-options" id="color-state">
+            <option
+              class="color-option"
+              style="background-color: rgba(13, 170, 131, 0.884)"
+              value="rgba(13, 170, 131, 0.884)"
+            >
+              Reset
+            </option>
+            <option
+              class="color-option"
+              style="background-color: #ffc107"
+              value="#FFC107"
+            >
+              Gold
+            </option>
+            <option
+              class="color-option"
+              style="background-color: #3498db"
+              value="#3498db"
+            >
+              blue
+            </option>
+            <option
+              class="color-option"
+              style="background-color: #32cd32"
+              value="#32cd32"
+            >
+              green
+            </option>
+            <option
+              class="color-option"
+              style="background-color: #ff6347"
+              value="#ff6347"
+            >
+              Warm
+            </option>
+            <option
+              class="color-option"
+              style="background-color: #9b59b6"
+              value="#9b59b6"
+            >
+              purple
+            </option>
+          </select>
+        </label>
+        <button type="button" title="Color-btn">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+      </div>
+      <!-- Audio container start ====== -->
+      <div class="audio-container">
+        <h5>Sound:</h5>
+        <button id="audioButton" title="play/pause" type="button">
+          <svg
+            class="off"
+            viewBox="0 0 30 30"
+            fill="var(--navcolor)"
+            xmlns="http://www.w3.org/2000/svg"
+            border="10"
+          >
+            <!-- Darker circle with softer opacity -->
+            <circle
+              opacity="0.4"
+              cx="15"
+              cy="15"
+              r="14.5"
+              stroke="var(--bordercolor)"
+            ></circle>
+            <!-- Lines adjusted to brighter color for dark theme -->
+            <path
+              d="M11.9091 14V15M9 14V15M15 14V15M18.0909 14.0002V15M21 14V15"
+              stroke="var(--white)"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
+        <audio id="audio" src="./audio/world1.mp3"></audio>
+      </div>
+      <!-- Audio container end ======== -->
+      <!-- Setting social start ====== -->
+      <div class="social-icon">
+        <h5>Social:</h5>
+        <button type="button" title="social-icon">
+          <i class="fa-solid fa-share-nodes"></i>
+        </button>
+        <ul class="social-media">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samiul-ajom/"
+              title="Linkedin Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/samiulajom"
+              target="_blank"
+              title="GitHub Profile"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/samiulajom"
+              title="Twitter Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/mdsamiulajomm"
+              target="_blank"
+              title="Facebook Profile"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mdsamiulajom/"
+              target="_blank"
+              title="Instagram Profile"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:samiulajomm@gmail.com"
+              target="_blank"
+              title="Gmail Profile"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samiul-ajom/"
+              title="Linkedin Profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Setting social end ====== -->
+    </div>
+    <!-- Setting-pannel end ==============================-->
+    <!--page-preloader start =================================== -->
+    <div class="page-preloader">
+      <div class="preloader-svg">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 514.23 511.4"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: var(--secondaryColor);
+                stroke: none;
+                stroke-miterlimit: 10;
+              }
+            </style>
+          </defs>
+          <path
+            class="cls-1"
+            d="M735.29,296l.3,13.91.61,28.1q.15,6.66.29,13.32a47.07,47.07,0,0,1-.51,7.32,22.12,22.12,0,0,1-1,5.3c-.74,1.87-2.57,3.12-4.08,4.33-3.09,2.47-6.84,4.42-10.88,4.48s-7.47-1.81-10.32-4.42c-4.31-3.95-5.67-7.07-5.72-12.9q-.06-5.77-.11-11.55l-.28-29.86c0-3.9-.07-7.79-.11-11.69-.06-6.5.1-12.4,2.78-18.44A38.7,38.7,0,0,1,717,269.49c4.13-3.34,10.13-6.51,15.56-6.63l21.34-.47,38.22-.83,9.49-.21c3.25-.07,6.86-.67,9.76,1.16a27.55,27.55,0,0,1,4.89,3.85c3.87,3.84,6,9,4.29,14.42a21.51,21.51,0,0,1-4.76,7.68c-2.5,2.72-4.1,4.45-7.93,4.44-4.73,0-9.46.28-14.19.4l-20,.49-20.13.5-14.56.36-3.81.09Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M1154.87,294.49l-13.91.36-28.1.72-13.32.34a45.94,45.94,0,0,1-7.32-.49,22.16,22.16,0,0,1-5.31-.94c-1.86-.73-3.13-2.55-4.34-4.06-2.48-3.09-4.45-6.82-4.53-10.86a15.18,15.18,0,0,1,4.38-10.34c3.94-4.33,7-5.7,12.88-5.78l11.55-.15,29.86-.4c3.9,0,7.8-.1,11.69-.15,6.51-.09,12.4.05,18.45,2.71a38.59,38.59,0,0,1,14.48,10.65c3.35,4.11,6.55,10.1,6.69,15.53l.55,21.34,1,38.22.24,9.48c.09,3.26.7,6.87-1.11,9.77a28,28,0,0,1-3.84,4.91c-3.82,3.88-9,6.07-14.4,4.34a21.28,21.28,0,0,1-7.69-4.73c-2.73-2.49-4.48-4.08-4.48-7.91,0-4.73-.32-9.46-.45-14.19l-.57-20-.58-20.13-.41-14.56c0-1.27-.08-2.54-.11-3.81Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M1156.29,737.29l-.21-13.92-.41-28.1q-.09-6.66-.19-13.33a47.08,47.08,0,0,1,.57-7.31,22,22,0,0,1,1-5.29c.75-1.86,2.59-3.11,4.11-4.3,3.11-2.45,6.87-4.38,10.91-4.41s7.46,1.87,10.29,4.5c4.29,4,5.62,7.11,5.63,12.94l0,11.55.06,29.86c0,3.9,0,7.8,0,11.69,0,6.51-.19,12.4-2.92,18.42A38.53,38.53,0,0,1,1174.38,764c-4.15,3.3-10.17,6.43-15.6,6.51l-21.34.32-38.23.56-9.49.14c-3.25,0-6.87.62-9.75-1.23a28.92,28.92,0,0,1-4.87-3.88c-3.83-3.87-6-9.07-4.18-14.45a21.32,21.32,0,0,1,4.82-7.65c2.51-2.7,4.13-4.42,8-4.39,4.73,0,9.47-.21,14.2-.29l20-.35,20.13-.35,14.56-.26,3.82-.06Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M739.66,739.15l49.64-1c7.81-.16,16.48,0,22.19,5.32,6.26,5.86,5.92,17.27-.69,22.74-5.35,4.43-12.9,4.68-19.85,4.71l-35.08.15c-8.7,0-17.56.06-25.91-2.41-6.53-1.94-12.85-5.62-17-11.16-4.93-6.64-5.71-14.75-6.48-22.82-1.7-17.88,0-35.85-.91-53.75-.37-7.32-1-15.31,3.27-21.27a15,15,0,0,1,24.28-.32c3.74,5,4.06,11.62,4.2,17.84.48,20.68.69,41.36.91,62Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M723.55,515l0,0,38.64,51.14c3.89,5.16,8,11.4,6.19,17.6-2,6.67-10.4,9.69-17.07,7.76s-11.69-7.44-15.57-13.2c-6-8.94-12.18-17.65-18.44-26.4l-20.74-29-.83-1.16c-2-2.8-4.11-6-3.71-9.39.3-2.54,1.93-4.69,3.5-6.71l44.41-56.77c1.87-2.39,3.87-4.88,6.67-6,4.73-1.95,10,.46,14.44,3.09,2.38,1.42,4.85,3.09,5.87,5.68,1.67,4.26-1.28,8.81-4.08,12.44Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M1173.82,516.39l0-.08-40.16-47.69c-3-3.63-6.18-7.38-7.58-11.91s-.65-10.06,3-13a15.09,15.09,0,0,1,7.37-2.67c3.35-.49,6.9-.59,10,.84s5.18,4.07,7.25,6.66l47.3,59.24c1.94,2.43,4,5.09,4.1,8.2s-1.64,5.9-3.36,8.47q-20.52,30.78-42.67,60.44a14.2,14.2,0,0,1-4.49,4.41c-2.45,1.27-5.39,1-8.12.54-12.18-2.08-16.14-11-9-21.22Q1155.67,542.5,1173.82,516.39Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <ellipse class="cls-1" cx="159.84" cy="16.73" rx="11.86" ry="12.29" />
+          <circle class="cls-1" cx="82.55" cy="253.87" r="22" />
+          <ellipse
+            class="cls-1"
+            cx="160.12"
+            cy="494.16"
+            rx="11.57"
+            ry="11.71"
+          />
+          <ellipse
+            class="cls-1"
+            cx="354.55"
+            cy="495.87"
+            rx="10.86"
+            ry="11.14"
+          />
+          <path
+            class="cls-1"
+            d="M1038,485.66c.28-.17.11-.53,0-1.25s-.2-1.71-.33-2.55c-.23-1.63-.52-3.25-.86-4.87a82.93,82.93,0,0,0-6.34-18.63,89.41,89.41,0,0,0-24.38-30.8,85.41,85.41,0,0,0-18.68-11.49c-27.56-12.35-61.08-9.59-86.92,6-.8.48-3.27,2.13-2.58,3.39.29.52,1.91.89,2.45,1.12L903.6,428l12.28,5.29,24.57,10.59,49.13,21.18c8.09,3.47,16.18,7,24.27,10.46l12.25,5.29c1.92.82,3.78,1.76,5.66,2.65,1.4.65,4.21,2.49,5.78,2.33A1.07,1.07,0,0,0,1038,485.66Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M854.29,538.45c-.28.17-.1.53,0,1.26s.2,1.7.32,2.55c.24,1.63.53,3.25.86,4.86a82.76,82.76,0,0,0,6.34,18.63,89.23,89.23,0,0,0,24.37,30.81,85.15,85.15,0,0,0,18.67,11.5c27.56,12.36,61.08,9.61,86.93-6,.8-.48,3.26-2.13,2.58-3.39-.29-.52-1.91-.89-2.45-1.13l-3.2-1.37-12.28-5.3-24.56-10.6-49.12-21.19c-8.09-3.47-16.17-7-24.26-10.47l-12.26-5.29c-1.91-.82-3.77-1.77-5.66-2.65-1.4-.66-4.2-2.49-5.78-2.33A1.14,1.14,0,0,0,854.29,538.45Z"
+            transform="translate(-691.45 -260.7)"
+          />
+          <path
+            class="cls-1"
+            d="M801.28,625.08c2.5-13,11-24.1,20.34-33.14,3.46-3.34,7.38-6.62,12.13-7.38,10.42-1.67,18.22,8.81,24.21,17.5,15.78,22.92,37.86,42.7,64.74,49.87,32.24,8.6,69-3.32,90.07-29.21,5.93-7.29,10.85-16.59,8.74-25.75-2.56-11.12-14.11-17.37-24.63-21.79-39.59-16.65-81.66-27.51-119.62-47.59-30.42-16.09-59-39.61-70.77-71.94-15.06-41.24,1.63-90.09,34.76-118.9,56.31-49,152.57-45.19,209.73.32a134.22,134.22,0,0,1,19.5,19c12.67,15.21,22,34.4,20.57,54.13-1.1,14.78-11.08,30.7-25.88,31.21-15.49.54-25.91-14.81-36-26.62-24.31-28.59-65.65-44.32-103.24-38.64-15.23,2.3-30.51,8.1-40.93,19.44-22.68,24.7-6.72,52.51,19.18,64.7,34.26,16.12,72.17,22.8,107.45,36.56s69.88,37.28,82.2,73.09c12.55,36.5-1.62,78.21-27.41,106.93C1033,714.13,980.79,733,931,727.73c-27.59-2.89-54.23-13-77.33-28.24a184.81,184.81,0,0,1-32-26.84c-9.67-10.18-19.69-21.88-21-36.48A40.85,40.85,0,0,1,801.28,625.08Z"
+            transform="translate(-691.45 -260.7)"
+          />
+        </svg>
+      </div>
+      <div class="loader-content"></div>
+    </div>
+    <!--page-preloader end ==================================== -->
+    <!--!EXTRA PART OF WEB PAGE END **********************************-->
+    <!--!MAIN PART START ******************************************** -->
+    <div class="main">
+      <!--Nav start ===============================================-->
+      <!-- Desktop Menu-bar start ============== -->
+      <nav class="desktop">
+        <div class="nav-logo">
+          <div>
+            <img src="./image/nav/pro2.png" alt="" />
+          </div>
+          <h2>Md. Samiul Ajom</h2>
+          <hr />
+        </div>
+        <ul>
+          <li>
+            <a href="#home">
+              <span><i class="fa-solid fa-house"></i></span>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about">
+              <span><i class="fa-solid fa-user"></i></span> Aboute me</a
+            >
+          </li>
+          <li>
+            <a href="#resume">
+              <span><i class="fa-solid fa-address-card"></i></span>Resume</a
+            >
+          </li>
+          <li>
+            <a href="#service"
+              ><span><i class="fa-brands fa-codepen"></i></span>Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><span><i class="fa-solid fa-briefcase"></i></span> Project</a
+            >
+          </li>
+
+          <li>
+            <a href="#contact"
+              ><span><i class="fa-solid fa-envelope"></i></span> Contact</a
+            >
+          </li>
+        </ul>
+        <div class="nav-bottom">
+          <div class="sm-btn">
+            <a
+              class="sm_text_effect"
+              href="image/cv/samiul-resume.pdf"
+              download=""
+              ><span class="wrapper"
+                ><span class="before">
+                  Download CV
+                  <i class="fa-solid fa-cloud-arrow-down fa-bounce"></i></span
+                ><span class="after"
+                  >Download CV
+                  <i
+                    class="fa-solid fa-cloud-arrow-down fa-bounce"
+                  ></i></span></span
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <!-- Desktop Menu-bar end ============== -->
+      <!-- Mobile Menu-bar start ========================= -->
+      <nav class="mobile">
+        <div class="logo">
+          <div class="nav-logo">
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1920 1080"
+            >
+              <path
+                d="M735.29,296l.3,13.91.61,28.1q.15,6.66.29,13.32a47.07,47.07,0,0,1-.51,7.32,22.12,22.12,0,0,1-1,5.3c-.74,1.87-2.57,3.12-4.08,4.33-3.09,2.47-6.84,4.42-10.88,4.48s-7.47-1.81-10.32-4.42c-4.31-3.95-5.67-7.07-5.72-12.9q-.06-5.77-.11-11.55l-.28-29.86c0-3.9-.07-7.79-.11-11.69-.06-6.5.1-12.4,2.78-18.44A38.7,38.7,0,0,1,717,269.49c4.13-3.34,10.13-6.51,15.56-6.63l21.34-.47,38.22-.83,9.49-.21c3.25-.07,6.86-.67,9.76,1.16a27.55,27.55,0,0,1,4.89,3.85c3.87,3.84,6,9,4.29,14.42a21.51,21.51,0,0,1-4.76,7.68c-2.5,2.72-4.1,4.45-7.93,4.44-4.73,0-9.46.28-14.19.4l-20,.49-20.13.5-14.56.36-3.81.09Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+
+              <path
+                d="M1154.87,294.49l-13.91.36-28.1.72-13.32.34a45.94,45.94,0,0,1-7.32-.49,22.16,22.16,0,0,1-5.31-.94c-1.86-.73-3.13-2.55-4.34-4.06-2.48-3.09-4.45-6.82-4.53-10.86a15.18,15.18,0,0,1,4.38-10.34c3.94-4.33,7-5.7,12.88-5.78l11.55-.15,29.86-.4c3.9,0,7.8-.1,11.69-.15,6.51-.09,12.4.05,18.45,2.71a38.59,38.59,0,0,1,14.48,10.65c3.35,4.11,6.55,10.1,6.69,15.53l.55,21.34,1,38.22.24,9.48c.09,3.26.7,6.87-1.11,9.77a28,28,0,0,1-3.84,4.91c-3.82,3.88-9,6.07-14.4,4.34a21.28,21.28,0,0,1-7.69-4.73c-2.73-2.49-4.48-4.08-4.48-7.91,0-4.73-.32-9.46-.45-14.19l-.57-20-.58-20.13-.41-14.56c0-1.27-.08-2.54-.11-3.81Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                d="M1156.29,737.29l-.21-13.92-.41-28.1q-.09-6.66-.19-13.33a47.08,47.08,0,0,1,.57-7.31,22,22,0,0,1,1-5.29c.75-1.86,2.59-3.11,4.11-4.3,3.11-2.45,6.87-4.38,10.91-4.41s7.46,1.87,10.29,4.5c4.29,4,5.62,7.11,5.63,12.94l0,11.55.06,29.86c0,3.9,0,7.8,0,11.69,0,6.51-.19,12.4-2.92,18.42A38.53,38.53,0,0,1,1174.38,764c-4.15,3.3-10.17,6.43-15.6,6.51l-21.34.32-38.23.56-9.49.14c-3.25,0-6.87.62-9.75-1.23a28.92,28.92,0,0,1-4.87-3.88c-3.83-3.87-6-9.07-4.18-14.45a21.32,21.32,0,0,1,4.82-7.65c2.51-2.7,4.13-4.42,8-4.39,4.73,0,9.47-.21,14.2-.29l20-.35,20.13-.35,14.56-.26,3.82-.06Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                d="M739.66,739.15l49.64-1c7.81-.16,16.48,0,22.19,5.32,6.26,5.86,5.92,17.27-.69,22.74-5.35,4.43-12.9,4.68-19.85,4.71l-35.08.15c-8.7,0-17.56.06-25.91-2.41-6.53-1.94-12.85-5.62-17-11.16-4.93-6.64-5.71-14.75-6.48-22.82-1.7-17.88,0-35.85-.91-53.75-.37-7.32-1-15.31,3.27-21.27a15,15,0,0,1,24.28-.32c3.74,5,4.06,11.62,4.2,17.84.48,20.68.69,41.36.91,62Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                d="M723.55,515l0,0,38.64,51.14c3.89,5.16,8,11.4,6.19,17.6-2,6.67-10.4,9.69-17.07,7.76s-11.69-7.44-15.57-13.2c-6-8.94-12.18-17.65-18.44-26.4l-20.74-29-.83-1.16c-2-2.8-4.11-6-3.71-9.39.3-2.54,1.93-4.69,3.5-6.71l44.41-56.77c1.87-2.39,3.87-4.88,6.67-6,4.73-1.95,10,.46,14.44,3.09,2.38,1.42,4.85,3.09,5.87,5.68,1.67,4.26-1.28,8.81-4.08,12.44Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                d="M1173.82,516.39l0-.08-40.16-47.69c-3-3.63-6.18-7.38-7.58-11.91s-.65-10.06,3-13a15.09,15.09,0,0,1,7.37-2.67c3.35-.49,6.9-.59,10,.84s5.18,4.07,7.25,6.66l47.3,59.24c1.94,2.43,4,5.09,4.1,8.2s-1.64,5.9-3.36,8.47q-20.52,30.78-42.67,60.44a14.2,14.2,0,0,1-4.49,4.41c-2.45,1.27-5.39,1-8.12.54-12.18-2.08-16.14-11-9-21.22Q1155.67,542.5,1173.82,516.39Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <ellipse
+                cx="851.29"
+                cy="277.43"
+                rx="11.86"
+                ry="12.29"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <circle
+                cx="774"
+                cy="514.57"
+                r="22"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <ellipse
+                cx="851.57"
+                cy="754.86"
+                rx="11.57"
+                ry="11.71"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <ellipse
+                cx="1046"
+                cy="756.57"
+                rx="10.86"
+                ry="11.14"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                class="d-shape"
+                d="M1038,485.66c.28-.17.11-.53,0-1.25s-.2-1.71-.33-2.55c-.23-1.63-.52-3.25-.86-4.87a82.93,82.93,0,0,0-6.34-18.63,89.41,89.41,0,0,0-24.38-30.8,85.41,85.41,0,0,0-18.68-11.49c-27.56-12.35-61.08-9.59-86.92,6-.8.48-3.27,2.13-2.58,3.39.29.52,1.91.89,2.45,1.12L903.6,428l12.28,5.29,24.57,10.59,49.13,21.18c8.09,3.47,16.18,7,24.27,10.46l12.25,5.29c1.92.82,3.78,1.76,5.66,2.65,1.4.65,4.21,2.49,5.78,2.33A1.07,1.07,0,0,0,1038,485.66Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                class="d-shape"
+                d="M854.29,538.45c-.28.17-.1.53,0,1.26s.2,1.7.32,2.55c.24,1.63.53,3.25.86,4.86a82.76,82.76,0,0,0,6.34,18.63,89.23,89.23,0,0,0,24.37,30.81,85.15,85.15,0,0,0,18.67,11.5c27.56,12.36,61.08,9.61,86.93-6,.8-.48,3.26-2.13,2.58-3.39-.29-.52-1.91-.89-2.45-1.13l-3.2-1.37-12.28-5.3-24.56-10.6-49.12-21.19c-8.09-3.47-16.17-7-24.26-10.47l-12.26-5.29c-1.91-.82-3.77-1.77-5.66-2.65-1.4-.66-4.2-2.49-5.78-2.33A1.14,1.14,0,0,0,854.29,538.45Z"
+                style="fill: none; stroke: #000; stroke-miterlimit: 10"
+              />
+              <path
+                d="M801.28,625.08c2.5-13,11-24.1,20.34-33.14,3.46-3.34,7.38-6.62,12.13-7.38,10.42-1.67,18.22,8.81,24.21,17.5,15.78,22.92,37.86,42.7,64.74,49.87,32.24,8.6,69-3.32,90.07-29.21,5.93-7.29,10.85-16.59,8.74-25.75-2.56-11.12-14.11-17.37-24.63-21.79-39.59-16.65-81.66-27.51-119.62-47.59-30.42-16.09-59-39.61-70.77-71.94-15.06-41.24,1.63-90.09,34.76-118.9,56.31-49,152.57-45.19,209.73.32a134.22,134.22,0,0,1,19.5,19c12.67,15.21,22,34.4,20.57,54.13-1.1,14.78-11.08,30.7-25.88,31.21-15.49.54-25.91-14.81-36-26.62-24.31-28.59-65.65-44.32-103.24-38.64-15.23,2.3-30.51,8.1-40.93,19.44-22.68,24.7-6.72,52.51,19.18,64.7,34.26,16.12,72.17,22.8,107.45,36.56s69.88,37.28,82.2,73.09c12.55,36.5-1.62,78.21-27.41,106.93C1033,714.13,980.79,733,931,727.73c-27.59-2.89-54.23-13-77.33-28.24a184.81,184.81,0,0,1-32-26.84c-9.67-10.18-19.69-21.88-21-36.48A40.85,40.85,0,0,1,801.28,625.08Z"
+                style="fill: none; stroke: ; stroke-miterlimit: 10"
+              />
+            </svg>
+          </div>
+          <h2>samiul<span>.</span></h2>
+        </div>
+        <div class="nav-left">
+          <div class="sm-btn">
+            <a
+              class="sm_text_effect"
+              href="image/cv/samiul-resume.pdf"
+              download=""
+              ><span class="wrapper"
+                ><span class="before">
+                  Download CV
+                  <i class="fa-solid fa-cloud-arrow-down fa-bounce"></i></span
+                ><span class="after"
+                  >Download CV
+                  <i
+                    class="fa-solid fa-cloud-arrow-down fa-bounce"
+                  ></i></span></span
+            ></a>
+          </div>
+          <div class="menu-bar open-btn">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-nav-menu">
+        <div class="menu-bar close-btn">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <ul class="mobile-menu-items">
+          <li class="active">
+            <a href="#home">
+              <span><i class="fa-solid fa-house"></i></span>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about">
+              <span><i class="fa-solid fa-user"></i></span> Aboute me</a
+            >
+          </li>
+          <li>
+            <a href="#resume">
+              <span><i class="fa-solid fa-address-card"></i></span>Resume</a
+            >
+          </li>
+          <li>
+            <a href="#service"
+              ><span><i class="fa-brands fa-codepen"></i></span>Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><span><i class="fa-solid fa-briefcase"></i></span> Project</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><span><i class="fa-solid fa-envelope"></i></span> Contact</a
+            >
+          </li>
+        </ul>
+        <div class="nav-bottom">
+          <div class="sm-btn">
+            <a
+              class="sm_text_effect"
+              href="image/cv/samiul-resume.pdf"
+              download=""
+              ><span class="wrapper"
+                ><span class="before">
+                  Download CV
+                  <i class="fa-solid fa-cloud-arrow-down fa-bounce"></i></span
+                ><span class="after"
+                  >Download CV
+                  <i
+                    class="fa-solid fa-cloud-arrow-down fa-bounce"
+                  ></i></span></span
+            ></a>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <h3>Get in touch</h3>
+          <ul class="social-media">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/samiul-ajom/"
+                title="Linkedin Profile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/samiulajom"
+                target="_blank"
+                title="GitHub Profile"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/samiulajom"
+                title="Twitter Profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/mdsamiulajomm"
+                target="_blank"
+                title="Facebook Profile"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mdsamiulajom/"
+                target="_blank"
+                title="Instagram Profile"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:samiulajomm@gmail.com"
+                target="_blank"
+                title="Gmail Profile"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/+8801957006467"
+                target="_blank"
+                title="Whatsapp"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Mobile Menu-bar end ========================= -->
+      <!--Nav end ================================================== -->
+      <!--Main Content start ========================================-->
+      <aside>
+        <!--Banner/Home start ==================== -->
+        <section id="home" class="banner">
+          <div class="left">
+            <span class="name"><span>//</span> Md. Samiul Ajom</span>
+            <h3>
+              Creative Designer <br />
+              And <br /><span class="auto-type"></span>
+            </h3>
+
+            <div class="sm-btn">
+              <a class="sm_text_effect" href="#contact"
+                ><span class="wrapper">
+                  <span class="before"
+                    ><i class="fa-solid fa-paper-plane"></i>Hire Me</span
+                  ><span class="after"
+                    ><i class="fa-solid fa-paper-plane"></i>Hire Me</span
+                  >
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="right">
+            <div class="image-container">
+              <img src="./image/banner/samiul-4.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!--Banner/Home end ====================== -->
+        <!--About start ========================== -->
+        <section id="about" class="about">
+          <div class="sm-bio-graphy">
+            <div class="left biography">
+              <div class="sm-title">
+                <span><span>//</span> Biography</span>
+              </div>
+              <div class="text">
+                <p>
+                  Hi, I’m <b>Md. Samiul Ajom</b>, a passionate and skilled
+                  <b>Front-End Web Developer</b> with a strong background in
+                  creating clean, responsive, and user-friendly web interfaces.
+                  I specialize in <b>HTML5, CSS3</b> (including
+                  <b> Bootstrap</b> and <b>Tailwind</b>),<b
+                    >SASS, JavaScript,</b
+                  >
+                  and modern frameworks like <b>ReactJS</b> and <b>Next.js</b>.
+                  With a keen eye for design and functionality, I aim to deliver
+                  seamless and innovative web experience.
+                  <br />
+
+                  <br />
+                  I am currently pursuing a
+                  <b>Diploma in Computer Technology</b> at Chapainawabganj
+                  Polytechnic Institute, where I continue to hone my technical
+                  skills and knowledge. My dedication to delivering quality work
+                  extends to my practical experience, including a 6-month
+                  workshop at NSSTHEME, where I contributed to real-world
+                  projects. Beyond my professional journey, I take pride in my
+                  strong problem-solving abilities and my commitment to staying
+                  updated with the latest web development trends. Whether it's
+                  collaborating with teams or working independently, I thrive on
+                  building solutions that leave a lasting impression.
+                </p>
+              </div>
+              <div class="sm-btn">
+                <a
+                  class="sm_text_effect"
+                  href="image/cv/samiul-resume.pdf"
+                  download=""
+                  ><span class="wrapper"
+                    ><span class="before">Download CV</span
+                    ><span class="after">Download CV</span></span
+                  ></a
+                >
+              </div>
+            </div>
+            <div class="right personal_details">
+              <div class="sm-title">
+                <span><span>//</span> Personal Details</span>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span>Name</span>
+                    <span>Md. Samiul Ajom</span>
+                  </li>
+                  <li>
+                    <span>Address</span>
+                    <span>Konabari,Gazipur,Dhaka,Bangladesh</span>
+                  </li>
+                  <li>
+                    <span>Study</span>
+                    <span>Chapainawabganj Polytechnic Institute</span>
+                  </li>
+                  <li>
+                    <span>Degree</span>
+                    <span>Diploma in Engineering</span>
+                  </li>
+                  <li>
+                    <span>Technology</span>
+                    <span>Computer Technology</span>
+                  </li>
+                  <li>
+                    <span>Mail</span>
+                    <span
+                      ><a class="line_effect" href="#"
+                        >samiulajomm@gmail.com</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span>Phone</span>
+                    <span
+                      ><a class="line_effect" href="#">+8801957006467</a></span
+                    >
+                  </li>
+                  <li>
+                    <span>Freelance</span>
+                    <span>Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--About end ============================ -->
+        <!--Resume start ========================= -->
+        <section class="resume" id="resume">
+          <!--Education start ================ -->
+          <div class="sm-education">
+            <div class="left">
+              <div class="sm-title">
+                <span><span>//</span> Education</span>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>NSS software training center</h3>
+                        <span>Web Development</span>
+                      </div>
+                      <div class="year">
+                        <span>JUNE-DEC-2024</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>Chapainawabganj Polytechnic Institute</h3>
+                        <span>
+                          Diploma in Engineering (Computer Technology)</span
+                        >
+                      </div>
+                      <div class="year">
+                        <span>2021-2024</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>Baghia Mamin Uddin Sarker Academy</h3>
+                        <span>Secondary School Certificate (S.S.C)</span>
+                      </div>
+                      <div class="year">
+                        <span>2020</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="sm-title">
+                <span><span>//</span> Experience</span>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>NSSTHEME (Themeforest)</h3>
+                        <span
+                          >6-month practical workshop as Front-end Web
+                          Developer</span
+                        >
+                      </div>
+                      <div class="year">
+                        <span>JUNE-DEC-2024</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>Success Pre Cadet and High School</h3>
+                        <span>Assistant Teacher</span>
+                      </div>
+                      <div class="year">
+                        <span>2020 - 2022</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list_inner">
+                      <div class="info">
+                        <h3>Golden Way IT Institute</h3>
+                        <span>Microsoft Office</span>
+                      </div>
+                      <div class="year">
+                        <span>2018 - 2020</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Education end  ================ -->
+          <!--Skills start =================== -->
+          <div class="sm-skills">
+            <div class="left">
+              <div class="sm-title">
+                <span><span>//</span> Programming Skills</span>
+              </div>
+              <div class="sm-progress">
+                <div class="progress-inner">
+                  <h4>HTML & CSS</h4>
+                  <div line-progressbar data-percentage="95"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>JavaScript</h4>
+                  <div line-progressbar data-percentage="80"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>Bootstrap ,Tailwind & SASS</h4>
+                  <div line-progressbar data-percentage="85"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>React</h4>
+                  <div line-progressbar data-percentage="75"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>Next.JS</h4>
+                  <div line-progressbar data-percentage="70"></div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="sm-title">
+                <span><span>//</span> Language Skills</span>
+              </div>
+              <div class="sm-progress">
+                <div class="progress-inner">
+                  <h4>English (Proficient)</h4>
+                  <div line-progressbar data-percentage="80"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>Bengali (Native)</h4>
+                  <div line-progressbar data-percentage="100"></div>
+                </div>
+              </div>
+              <div class="sm-title">
+                <span><span>//</span>Others Skill</span>
+              </div>
+              <div class="sm-progress">
+                <div class="progress-inner">
+                  <h4>Photoshop & Figma</h4>
+                  <div line-progressbar data-percentage="80"></div>
+                </div>
+                <div class="progress-inner">
+                  <h4>MS-( Word, Excel, PowerPoint)</h4>
+                  <div line-progressbar data-percentage="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Skills end =================== -->
+          <!--Features start =============== -->
+          <div class="sm-features">
+            <div class="left">
+              <div class="sm-title">
+                <span><span>//</span> Interests</span>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span><label>✓</label> Web Design</span>
+                  </li>
+                  <li>
+                    <span><label>✓</label>Web Development </span>
+                  </li>
+                  <li>
+                    <span><label>✓</label> Learning Figma & Photoshop</span>
+                  </li>
+                  <li>
+                    <span><label>✓</label>New Technology</span>
+                  </li>
+                  <li>
+                    <span><label>✓</label> Watching Cinema & Drama</span>
+                  </li>
+
+                  <li>
+                    <span><label>✓</label> Reading Books</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="sm-title">
+                <span><span>//</span> Awwards</span>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span
+                      ><label>✓</label>Scholarship Recipient – Junior School
+                      Certificate (JSC)</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      ><label>✓</label>Academic Excellence Award-Fourth Semester
+                      Result(A+)</span
+                    >
+                  </li>
+                  <li>
+                    <span><label>✓</label>Leadship prize </span>
+                  </li>
+                  <li>
+                    <span><label>✓</label> CSS Design Awards</span>
+                  </li>
+                  <li>
+                    <span><label>✓</label> Best presentation</span>
+                  </li>
+                  <li>
+                    <span><label>✓</label> The Horizon Interactive</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Features end ================= -->
+          <!--SVG  start =================== -->
+          <div class="svg-line-container">
+            <div class="svg-header-container">
+              <h2>Interactive SVG Path Animation</h2>
+            </div>
+            <p>
+              This project showcases a dynamic SVG path that reacts to user
+              mouse movements. The path’s curve changes interactively while the
+              start and end points fixed. It’s an animated design created for
+              fun and skill demonstration, using
+              <b>HTML, CSS, JavaScript, and GSAP</b> for smooth animations and
+              real-time interaction.
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 920 320"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                d="M 10 100 Q 500 10 920 100"
+                stroke="var(--secondaryColor)"
+                fill="transparent"
+              />
+            </svg>
+          </div>
+          <!--SVG  end ===================== -->
+          <!--Counter  start================ -->
+          <div class="sm-counter">
+            <div class="sm-title">
+              <span><span>//</span> Fun Facts</span>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="list_inner">
+                    <h3>100+</h3>
+                    <span>Projects Completed</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <h3>30k+</h3>
+                    <span>Lines of Code</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <h3>300+</h3>
+                    <span>Animation with Gsap</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <h3>100%</h3>
+                    <span>Satisfaction Guarantee</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Counter end ================== -->
+          <!-- Testimonial start ============-->
+          <div class="sm-testimonials">
+            <div class="sm-title">
+              <span><span>//</span> Clients Testimonials</span>
+            </div>
+            <div class="slider-container">
+              <div class="container">
+                <div class="swiper sm-testimonial-cards">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/2.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Jhon Doe</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/1.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Armin Bhaan vuiran</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/3.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Abrar Chowdury</h3>
+                            <span>Production Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/2.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Jhon Doe</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/1.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Armin Bhaan vuiran</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/3.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Abrar Chowdury</h3>
+                            <span>Production Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/2.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Jhon Doe</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/1.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Armin Bhaan vuiran</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/3.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Abrar Chowdury</h3>
+                            <span>Production Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/2.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Jhon Doe</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/1.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Armin Bhaan vuiran</h3>
+                            <span>Content Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="list_inner">
+                        <div class="text">
+                          <p>
+                            The first time I got an issue sorted within seconds.
+                            The author responded to my email within minutes. I
+                            am happy to recommend anyone not only this wonderful
+                            theme but also the author.
+                          </p>
+                        </div>
+                        <div class="details">
+                          <div class="image">
+                            <img src="./image/testimonial/3.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h3>Abrar Chowdury</h3>
+                            <span>Production Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial end ==============-->
+          <!-- Resume download Btn start ====-->
+          <div class="resume-down-btn">
+            <div class="sm-btn">
+              <a
+                class="sm_text_effect"
+                href="image/cv/samiul-resume.pdf"
+                download=""
+                ><span class="wrapper"
+                  ><span class="before">Download CV</span
+                  ><span class="after">Download CV</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!-- Resume download Btn end ======-->
+        </section>
+        <!--Resume end ============================ -->
+        <!--Service start ========================= -->
+        <section class="service" id="service">
+          <div class="sm-title">
+            <span><span>//</span> Top Notch Services</span>
+          </div>
+          <div class="services-list">
+            <ul>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-solid fa-code"></i></span>
+                    <h3 class="title">Web Development</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Building responsive, user-friendly websites using the
+                      latest web technologies like HTML, CSS, and JavaScript."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-brands fa-react"></i></span>
+                    <h3 class="title">Frontend Development</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Creating modern, dynamic, and interactive user interfaces
+                      using React and advanced frontend frameworks."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-solid fa-pen"></i></span>
+                    <h3 class="title">Landing Page Design</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Designing intuitive, visually appealing interfaces
+                      tailored to user needs, focusing on usability and
+                      aesthetics."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-solid fa-mobile-screen"></i></span>
+                    <h3 class="title">Responsive Design</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Creating mobile-first, fully responsive designs with
+                      tools like Bootstrap and Tailwind CSS to ensure seamless
+                      experiences across all devices."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-solid fa-palette"></i></span>
+                    <h3 class="title">Website Redesign</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Enhancing and modernizing outdated websites to align with
+                      current trends and user expectations."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list_inner">
+                  <div class="card-head">
+                    <span><i class="fa-regular fa-clock fa-spin"></i></span>
+                    <h3 class="title">Web Animation</h3>
+                  </div>
+                  <div class="descrip">
+                    <p>
+                      "Enhancing user engagement with smooth, interactive
+                      animations and effects using GSAP and modern web
+                      technologies."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Service end =========================== -->
+        <!--Portfolio start======================== -->
+        <section class="protfolio" id="portfolio">
+          <div class="portfolio-top">
+            <div class="sm-title">
+              <span><span>//</span>Creative Portfolio</span>
+            </div>
+            <div class="portfolio_filter">
+              <ul>
+                <li data-filter="*">All</li>
+                <li data-filter=".corporate">Corporate</li>
+                <li data-filter=".app">App</li>
+                <li data-filter=".personal">Personal</li>
+                <li data-filter=".weather">Weather</li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-list">
+            <ul>
+              <li class="big-img corporate personal">
+                <a href="#"
+                  ><img src="./image/portfolio/monnu.jpg" alt="monnu" />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+              <li class="small-img personal">
+                <a href="#"
+                  ><img
+                    src="./image/portfolio/portfolio-img2.png"
+                    alt="monnu"
+                  />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+              <li class="horizon-img app">
+                <a href="#"
+                  ><img src="./image/portfolio/cal.png" alt="monnu" />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="big-img corporate">
+                <a href="#"
+                  ><img src="./image/portfolio/taxi.jpg" alt="taxi" />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+              <li class="big-img weather app">
+                <a href="#"
+                  ><img src="./image/portfolio/weather.png" alt="weather" />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Weather</span>
+                  </div>
+                </a>
+              </li>
+              <li class="horizon-img app">
+                <a href="#"
+                  ><img src="./image/portfolio/quiz.png" alt="monnu" />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+              <li class="small-img personal">
+                <a href="#"
+                  ><img
+                    src="./image/portfolio/portfolio-img3.png"
+                    alt="monnu"
+                  />
+                  <div class="info">
+                    <span>Design</span>
+                    <br />
+                    <span>Specialization</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Portfolio end ========================== -->
+        <!-- Contact start ========================= -->
+        <section class="contact" id="contact">
+          <div class="sm-title">
+            <span><span>//</span>Contact Details</span>
+          </div>
+          <!-- contact body start ============= -->
+          <div class="contact-body">
+            <div class="contact-top">
+              <h2>
+                <span class="sm-contact">Contact </span>
+                <span class="sm-me">Me.</span>
+              </h2>
+              <p></p>
+            </div>
+            <div class="contact-mid-part">
+              <div class="contact-info">
+                <ul>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                      <h3>Location</h3>
+                      <p>Konabari,Gazipur,Dhaka,Bangladesh</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <div>
+                      <h3>Email</h3>
+                      <p>samiulajomm@gmail.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <div>
+                      <h3>Phone</h3>
+                      <p>+88 01957-00-6467</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-form">
+                <form action="mailto:samiulajomm@gmail.com" method="post">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required=""
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="E-Mail"
+                    required=""
+                  />
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <ul class="social-icon">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/samiul-ajom/"
+                        title="Linkedin Profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/samiulajom"
+                        target="_blank"
+                        title="GitHub Profile"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/samiulajom"
+                        title="Twitter Profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fa-brands fa-square-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/mdsamiulajomm"
+                        target="_blank"
+                        title="Facebook Profile"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/mdsamiulajom/"
+                        target="_blank"
+                        title="Instagram Profile"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:samiulajomm@gmail.com"
+                        target="_blank"
+                        title="Gmail Profile"
+                        ><i class="fa-solid fa-envelope"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://wa.me/+8801957006467"
+                        target="_blank"
+                        title="Whatsapp"
+                        rel="noopener noreferrer"
+                        ><i class="fa-brands fa-whatsapp"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+            </div>
+            <div class="contact-footer">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.607063637819!2d90.31586397441644!3d24.00964887877609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dd98807fef25%3A0x4c95bcdab99029e6!2sOxford%20Model%20School!5e0!3m2!1sen!2sbd!4v1735465867359!5m2!1sen!2sbd"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- contact body end =============== -->
+        </section>
+        <!-- Contact end ============================ -->
+        <!-- Footer start =========================== -->
+        <footer>
+          <p class="copy-right">2024 © Samiul-themes. All Right Reserved</p>
+        </footer>
+        <!-- Footer start =========================== -->
+      </aside>
+      <!--Main Content end ===========================================-->
+    </div>
+    <!--!MAIN PART START ********************************************* -->
+    <!--! ALL JAVASCRIPT START *************************************** -->
+    <!-- JQuery CDN link =============================== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- GSAP CDN link ================================= -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Auto Typed.js CDN link ======================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--Ripples  CDN link ===============================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <!-- Isotope link ==================================  -->
+    <script src="js/isotpe.min.js"></script>
+    <!--Line progressbar  link =========================  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="./js/jquery.lineProgressbar.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Lenis CDN link ============================  -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!--All Extarnal  Javascript link  ====================-->
+    <script src="./js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <!--! ALL JAVASCRIPT END ************************************ -->
+  </body>
+</html>

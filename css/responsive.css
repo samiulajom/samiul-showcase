@@ -1,0 +1,852 @@
+/*------------------------------------------------------------------
+[Project Header]
+Project Name: Samiul Ajom | Resume & Portfolio Template
+Author: Samiul Ajom
+Support: samiulajom2004@gmail.com
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+1.Extra large 
+2.Desktop,Laptop 
+3.Tablet,Big Mobile
+4.Mobile Device
+------------------------------------------------------------------*/
+/*!1. Extra large Device start -------------------------------------  */
+@media (min-width: 1900px) {
+  /*  Common styles start ------------------------------------ */
+  body,
+  nav ul li,
+  .contact-form form input,
+  .percentage,
+  .contact-form form textarea {
+    font-size: 20px;
+  }
+  .sm-btn span,
+  nav .nav-logo h2,
+  .banner .left .name,
+  .sm-education .info h3,
+  .service .services-list .list_inner .title,
+  .portfolio_filter li,
+  .setting-pannel h5 {
+    font-size: 25px;
+  }
+  .sm-title,
+  .svg-line-container h2,
+  .setting-pannel .social-icon a i,
+  .circle-container .arrow {
+    font-size: 30px;
+  }
+  aside section {
+    padding: 100px;
+  }
+  /*  Common styles end -------------------------------------- */
+  /* nav start ------------------------------------------------ */
+  nav .nav-logo div {
+    width: 180px;
+    height: 180px;
+  }
+  nav ul li a {
+    line-height: 50px;
+  }
+  .nav-bottom .sm-btn a {
+    padding: 15px 32px;
+  }
+  .nav-bottom .sm-btn a span {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  /* nav  end ------------------------------------------------ */
+  /*  banner start ------------------------------------------- */
+  .banner .left h3 {
+    font-size: 50px;
+  }
+  .banner .right {
+    perspective: 600px;
+  }
+  /*  banner end ---------------------------------------------- */
+  /* aboute start --------------------------------------------- */
+  .sm-bio-graphy .biography .text {
+    height: 290px;
+  }
+  /* aboute end --------------------------------------------- */
+  /* Resume start --------------------------------------------- */
+  .progress-inner h4,
+  .progress-inner .percentCount {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+  .sm-testimonials .swiper {
+    height: 600px;
+  }
+  /* Resume end ------------------------------------------------*/
+  /* Contact start -------------------------------------------- */
+  .contact-top h2 {
+    font-size: 85px;
+  }
+  .contact-info ul li h3,
+  .contact-info ul li i {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .contact .social-icon a i {
+    font-size: 40px;
+  }
+  .contact-form form button {
+    font-size: 25px;
+    padding: 20px 40px;
+  }
+  .contact-footer {
+    margin: 0 10%;
+  }
+  .contact-footer iframe {
+    height: 500px;
+  }
+  /* Contact end -------------------------------------------- */
+  /**EXTRA PART DESIGN START ---------------------------------------------------- */
+  /* setting panel start----------------------- */
+  .setting-pannel .setting span {
+    font-size: 40px;
+    padding: 15px 15px;
+  }
+  .setting-pannel .theme-mode li {
+    font-size: 30px;
+    padding: 5px 20px;
+  }
+  .audio-container svg {
+    height: 60px;
+    width: 60px;
+  }
+  .setting-pannel .social-icon button {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+  }
+  .setting-pannel .social-icon .social-media {
+    gap: 15px;
+    padding: 16px 40px;
+  }
+  /* setting panel end----------------------- */
+  /* Page scroll loader start ----------------- */
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .out-circle {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  /* Page scroll loader end ----------------- */
+  /* Cursor  start ------------------------- */
+  .cursor {
+    width: 40px;
+    height: 40px;
+  }
+  .cursor-small {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+  }
+  /* Cursor  start ------------------------- */
+  /**EXTRA PART DESIGN END ------------------------------------- */
+}
+/*!1. Extra large Device end ---------------------------------------  */
+/*! 2.Desktop,Laptop Device start -------------------------------------------- */
+@media (max-width: 1279px) {
+  /* common start ---------------------------------------- */
+  body,
+  nav ul li,
+  .contact-form form input,
+  .percentage,
+  .contact-form form textarea {
+    font-size: 14px;
+  }
+  .sm-btn span,
+  nav .nav-logo h2,
+  .banner .left .name,
+  .sm-education .info h3,
+  .portfolio_filter li,
+  .setting-pannel h5 {
+    font-size: 16px;
+  }
+  .sm-title,
+  .svg-line-container h2,
+  .setting-pannel .social-icon a i,
+  .circle-container .arrow,
+  .service .services-list .list_inner .title {
+    font-size: 20px;
+  }
+  aside {
+    width: 100%;
+    margin: 60px 100px;
+  }
+  /* common end ---------------------------------------- */
+  /* nav start ----------------------------------------- */
+  nav.desktop {
+    display: none;
+    width: 0;
+  }
+  nav.mobile {
+    width: 100%;
+    height: 80px;
+    background: var(--navcolor);
+    background: rgba(23, 24, 27, 0.3); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  nav.mobile .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav.mobile .nav-logo {
+    height: 80px;
+  }
+  nav.mobile .nav-logo img,
+  nav.mobile .nav-logo svg {
+    height: 100%;
+  }
+  nav.mobile .logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  nav.mobile .logo h2 span {
+    color: var(--secondaryColor);
+    font-weight: 900;
+  }
+  nav.mobile .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav.mobile .sm-btn {
+    margin: 0;
+  }
+  nav.mobile .sm-btn a {
+    padding: 12px 32px;
+  }
+  nav.mobile .sm-btn a span {
+    font-size: 14px;
+  }
+  nav.mobile .menu-bar {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--bordercolor);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+  }
+  nav.mobile .menu-bar:hover {
+    background: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+  }
+  .mobile-nav-menu {
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    background: var(--navcolor);
+    background: rgba(23, 24, 27, 0.5); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+  }
+  .mobile-nav-menu.active {
+    display: flex;
+  }
+  .mobile-nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 50px;
+  }
+  .mobile-nav-menu ul li {
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    list-style: none;
+  }
+  .mobile-nav-menu ul li.active {
+    color: var(--secondaryColor);
+  }
+  .mobile-nav-menu ul li a {
+    color: white;
+    transition: all 0.3s;
+    display: flex;
+    gap: 10px;
+  }
+  .mobile-nav-menu ul li a:hover {
+    color: var(--secondaryColor);
+  }
+  .mobile-nav-menu .menu-bar {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--bordercolor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: var(--white);
+    transition: all 0.3s linear;
+  }
+  .mobile-nav-menu .menu-bar:hover {
+    background: rgb(112, 4, 4);
+    border-color: rgb(112, 4, 4);
+  }
+  .mobile-nav-menu .nav-footer h3 {
+    font-size: clamp(18px, 3vw, 20px);
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .mobile-nav-menu .nav-footer ul {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .mobile-nav-menu .nav-footer ul a {
+    font-size: clamp(18px, 3vw, 20px);
+  }
+  /* nav end ----------------------------------------- */
+  /* aboute start ------------------------------------- */
+  .about .personal_details ul li span:first-child::after {
+    left: 90px;
+  }
+  .about .personal_details ul li span:last-child {
+    left: 100px;
+  }
+  /* aboute end ------------------------------------- */
+  /* service start ---------------------------------- */
+  .service .services-list .list_inner {
+    padding: 40px 30px;
+  }
+  .service .services-list .list_inner i {
+    font-size: 25px;
+  }
+  .portfolio_filter li::after {
+    margin: 0px;
+  }
+  /* service end ---------------------------------- */
+  /* extra part start ----------------------------- */
+  .setting-pannel {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* extra part start ----------------------------- */
+}
+@media (max-width: 1024px) {
+  /* common start ---------------------------------------- */
+  .sm-title,
+  .svg-line-container h2,
+  .setting-pannel .social-icon a i,
+  .circle-container .arrow,
+  .service .services-list .list_inner .title {
+    font-size: 16px;
+  }
+  body,
+  nav ul li,
+  .contact-form form input,
+  .percentage,
+  .progress-inner h4,
+  .contact-form form textarea {
+    font-size: 12px;
+  }
+  .resume > div {
+    padding: 50px 0;
+  }
+  /* common end -------------------------------------- */
+  /* portfolio start ---------------------------------- */
+  .portfolio_filter li {
+    font-size: 14px;
+  }
+  .big-img {
+    width: 70%;
+  }
+  .small-img,
+  .horizon-img {
+    width: 40%;
+  }
+  /* portfolio end -------------------------------------- */
+  /* contact start -------------------------------------- */
+  .contact-footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-footer iframe {
+    height: 250px;
+  }
+  /* contact start -------------------------------------- */
+}
+/*! 2.Desktop,Laptop Device end -------------------------------------------- */
+/*!3. Tablet,big Mobile Device start ------------------------------- */
+@media (max-width: 991px) {
+  /* common start ------------------------------------- */
+  .sm-title {
+    letter-spacing: 2px;
+  }
+  aside {
+    margin: 60px 50px;
+  }
+  .sm-btn span,
+  nav .nav-logo h2,
+  .banner .left .name,
+  .sm-education .info h3,
+  .portfolio_filter li,
+  .setting-pannel h5 {
+    font-size: 14px;
+  }
+  /* common end --------------------------------------- */
+  /* banner start ------------------------------------ */
+  .banner .left h3 {
+    font-size: 23px;
+  }
+  /* banner end ---------------------------------------- */
+  /* aboute start ------------------------------------- */
+  .sm-bio-graphy .biography {
+    padding-right: 25px;
+  }
+  .sm-bio-graphy .biography .text {
+    height: 210px;
+  }
+  .about .personal_details ul li span:first-child::after {
+    left: 65px;
+  }
+  .about .personal_details ul li span:last-child {
+    font-size: 12px;
+    left: 75px;
+  }
+  /* aboute end ------------------------------------- */
+  /* testimonail start ------------------------------ */
+  .sm-testimonials .list .info h3 {
+    font-size: 16px;
+    white-space: wrap;
+  }
+  .sm-testimonials .list .info span {
+    font-size: 12px;
+  }
+  .sm-testimonial-cards .swiper-slide .details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .slider-container {
+    padding: 20px;
+  }
+  /* testimonial end -------------------------------- */
+  /* service start ---------------------------------- */
+  .service .services-list ul li {
+    width: 45%;
+  }
+  /* service end ------------------------------------- */
+  /* portfolio start --------------------------------- */
+  .portfolio_filter ul li {
+    font-size: 10px;
+  }
+  .portfolio-list ul {
+    padding: 20px;
+  }
+  /* portfolio end ----------------------------------- */
+  /* contact start ----------------------------------- */
+  .contact-mid-part {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .contact-top p {
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-info ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact-info ul li {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    padding: 10px;
+  }
+  .contact-info ul li:not(:last-child) {
+    border-right: 1px dashed var(--bordercolor);
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-form form input {
+    width: 45%;
+  }
+  /* contact end ------------------------------------- */
+  /* extra part start -------------------------------- */
+  .setting-pannel {
+    right: unset;
+    left: 0;
+  }
+  .setting-pannel .setting.active {
+    left: unset;
+    right: 0;
+    transform: translateX(100%);
+  }
+  .setting-pannel .social-icon .social-media,
+  .setting-pannel .color-panel .color-options {
+    right: 0;
+    transform: translate(102%, -50%);
+  }
+  .cursor,
+  .cursor-small {
+    display: none;
+  }
+  .circle-container {
+    right: unset;
+    left: 0;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .out-circle {
+    left: 0;
+    right: unset;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .percentage,
+  .circle-container .arrow {
+    font-size: 10px;
+  }
+  /* extra part end -------------------------------- */
+}
+@media (max-width: 767px) {
+  /* common start -------------------------------- */
+  body,
+  nav ul li,
+  .contact-form form input,
+  .progress-inner h4,
+  .contact-form form textarea {
+    font-size: 16px;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  /* common end ----------------------------------- */
+  /* banner start --------------------------------- */
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .left {
+    width: 100%;
+  }
+  .banner .left h3 {
+    font-size: 25px;
+  }
+  .banner .right {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .banner .image-container {
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+  .banner .image-container {
+    left: 50%;
+    transform: rotateY(0) translateX(-50%);
+  }
+  /* banner end ----------------------------------- */
+  /* aboute start --------------------------------- */
+  .sm-bio-graphy .biography .text p {
+    font-size: 14px;
+  }
+  .sm-bio-graphy {
+    flex-direction: column;
+  }
+  .sm-bio-graphy .biography {
+    width: 100%;
+  }
+  .right.personal_details {
+    padding-top: 50px;
+  }
+  /* aboute start ------------------------------------- */
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:last-child {
+    font-size: 16px;
+  }
+  .about .personal_details ul li span:first-child::after {
+    left: 10ch;
+  }
+  .about .personal_details ul li span:last-child {
+    left: 12ch;
+  }
+  /* aboute end -------------------------------------- */
+  /* resume start ------------------------------------ */
+  .resume > div {
+    flex-direction: column;
+  }
+  .resume .right {
+    padding-left: 0px;
+  }
+  .resume .left {
+    padding-right: 0;
+  }
+  /* resume end --------------------------------------- */
+  /* sm-counter start ---------------------------------*/
+  .sm-counter .list ul li .list_inner {
+    padding: 10px;
+  }
+  .sm-counter .list ul li h3 {
+    font-size: 20px;
+  }
+  .sm-counter .list ul li .list_inner span {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  /* sm-counter end ----------------------------- */
+  /* service start -------------------------------- */
+  .service .services-list ul li {
+    width: 100%;
+  }
+  /* service end -------------------------------- */
+  /* portfolio start------------------------------- */
+  .portfolio-top {
+    flex-direction: column;
+  }
+  .portfolio_filter {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .portfolio_filter ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .small-img,
+  .horizon-img {
+    width: 60%;
+  }
+  .portfolio-list ul li.big-img a .info {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  /* portfolio end------------------------------- */
+  /* contact start ----------------------------- */
+  .contact-info ul {
+    flex-wrap: wrap;
+  }
+  .contact-info ul li:not(:last-child) {
+    border-right: none;
+  }
+  .contact-footer {
+    width: 100%;
+  }
+  .contact-footer iframe {
+    height: 180px;
+  }
+  /* contact end ----------------------------- */
+  /* extra part start ------------------------ */
+  .page-preloader .loader-content span {
+    font-size: 4vw;
+    margin: 0 2px;
+  }
+  .page-preloader svg {
+    height: 25px;
+    width: 25px;
+  }
+  /* extra part end ------------------------ */
+}
+/*! 3. Tablet,big Mobile Device end ------------------------------- */
+/*! 4. Mobile Device start ---------------------------------------- */
+@media (max-width: 575px) {
+  /* common start ------------------------------- */
+  aside {
+    margin: 60px 20px;
+  }
+  /* common end ------------------------------- */
+  /* nav start -------------------------------- */
+  nav.mobile,
+  nav.mobile .nav-logo,
+  nav.mobile .logo .nav-logo {
+    height: 60px;
+  }
+  nav.mobile .menu-bar {
+    width: 40px;
+    height: 40px;
+  }
+  nav.mobile .nav-left .sm-btn {
+    display: none;
+  }
+  /* nav end ---------------------------------- */
+  /* aboute start ----------------------------- */
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:first-child,
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:last-child {
+    font-size: 14px;
+  }
+  /* about end -------------------------------- */
+  /* education start -------------------------- */
+  .sm-education .list li .list_inner {
+    flex-direction: column;
+  }
+  .sm-education .info {
+    padding-right: 0;
+  }
+  .sm-education .info h3 {
+    font-size: 18px;
+  }
+  /* education end ---------------------------- */
+  /* counter start ---------------------------- */
+  .sm-counter .list ul li {
+    width: 45%;
+  }
+  /* counter end ------------------------------ */
+  /* contact start ---------------------------- */
+  .contact-info ul li h3 {
+    font-size: 16px;
+  }
+  .contact-form form input {
+    width: 100%;
+  }
+  .contact-form form button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+  /* contact end --------------------------------- */
+}
+@media (max-width: 479px) {
+  /* common start ------------------------------ */
+  aside {
+    margin: 50px 10px;
+  }
+  aside section {
+    padding: 40px 20px;
+  }
+  .sm-title {
+    margin-bottom: 20px;
+  }
+  .resume > div {
+    padding: 20px 0;
+  }
+  /* common end -------------------------------- */
+  /* nav start --------------------------------- */
+  nav.mobile .logo h2 {
+    display: none;
+  }
+  /* nav end ---------------------------------- */
+  /* banner start ----------------------------- */
+  .banner {
+    padding: 50px 20px;
+  }
+  /* banner end -------------------------------*/
+  /* aboute section start -------------------- */
+  .about .personal_details ul li span:first-child::after,
+  .about .personal_details ul li span:last-child {
+    position: unset;
+    padding: 2px;
+  }
+  .sm-bio-graphy .biography .text p,
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:first-child,
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:last-child {
+    font-size: 12px;
+  }
+  /* aboute section end--------------------- */
+  /* testimonial start ------------------------ */
+
+  .sm-testimonials .list ul li {
+    padding: 20px;
+  }
+  .resume-down-btn {
+    top: 30px;
+  }
+  .slider-container {
+    padding: 20px;
+  }
+  .sm-testimonial-cards .swiper-slide .list_inner {
+    padding: 20px;
+  }
+  .sm-testimonials .container {
+    height: 650px;
+  }
+  .sm-testimonials.pagination {
+    margin-top: 20px;
+  }
+  /* testimonial end ------------------------ */
+  /* service start -------------------------- */
+  .service {
+    padding: 40px 20px;
+  }
+  .service .services-list .list_inner {
+    padding: 30px 20px;
+  }
+  /* service end ---------------------------- */
+  /* portfolio start ---------------------- */
+  .portfolio_filter ul li {
+    margin-left: 2px;
+  }
+  /* portfolio end ------------------------ */
+  /* contact start -------------------------- */
+  .contact-top h2 {
+    font-size: 30px;
+  }
+  .contact-info ul li h3 {
+    font-size: 16px;
+  }
+  .contact-info p {
+    font-size: 12px;
+  }
+  /* contact end  -------------------------- */
+}
+@media (max-width: 300px) {
+  /* common start --------------------------------- */
+  .contact-info p,
+  .sm-bio-graphy .biography .text p,
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:first-child,
+  .about .personal_details ul li span,
+  .about .personal_details ul li span:last-child {
+    font-size: 10px;
+  }
+  /* common end ------------------------------------ */
+}
+/*! 4. Mobile Device end ---------------------------------------- */
