@@ -15,6 +15,7 @@ function TypedAnimation(arg) {
       "Frontend Developer",
       "UI/UX Designer",
       "Programmer",
+      "Shopify Developer"
     ],
     typeSpeed: 80, // Typing speed in milliseconds
     backSpeed: 60, // Backspacing speed in milliseconds
