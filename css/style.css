@@ -728,19 +728,42 @@ aside section {
   background: var(--navcolor);
   border: 1px solid var(--bordercolor);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
 }
 .sm-testimonial-cards .swiper-slide .list_inner {
   padding: 40px;
+  overflow: hidden;
 }
 .sm-testimonial-cards .swiper-slide .text {
-  border-bottom: 1px solid var(--bordercolor);
+
   padding-bottom: 20px;
   margin-bottom: 20px;
   color: var(--bc);
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondaryColor) transparent;
 }
+
+/* scroll start */
+.sm-testimonial-cards .swiper-slide .text::-webkit-scrollbar {
+  width: 8px;
+}
+.sm-testimonial-cards .swiper-slide .text::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+}
+.sm-testimonial-cards .swiper-slide .text::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* scroll end */
+
 .sm-testimonial-cards .swiper-slide .details {
   display: flex;
   gap: 1rem;
+  margin-top: 20px;
+  border-top: 1px solid var(--bordercolor);
+  padding: 20px 0;
 }
 .sm-testimonial-cards .swiper-slide .details img {
   height: 100px;

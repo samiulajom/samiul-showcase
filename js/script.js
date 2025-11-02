@@ -321,10 +321,10 @@ function swiperSlider() {
     spaceBetween: 30,
     loop: true, // Enables infinite loop
     autoHeight: true, // Adjusts height automatically
-    autoplay: {
-      delay: 3000, // Delay in milliseconds between slides
-      disableOnInteraction: false, // Autoplay won't stop on user interaction
-    },
+    // autoplay: {
+    //   delay: 3000, // Delay in milliseconds between slides
+    //   disableOnInteraction: false, // Autoplay won't stop on user interaction
+    // },
     speed: 1000, // Speed of the slide transition in milliseconds
     effect: "slide", // Smooth sliding animation
     pagination: {
@@ -344,7 +344,7 @@ function swiperSlider() {
       },
       1900: {
         slidesPerView: 3, // 3 slides for large screens
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     },
   });
