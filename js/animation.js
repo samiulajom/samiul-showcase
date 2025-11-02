@@ -116,6 +116,8 @@ function PageScrollParsentage() {
   const percentageText = document.querySelector(".percentage");
   const arrow = document.querySelector(".circle-container .arrow");
   const outCircle = document.querySelector(".out-circle");
+  const color = getComputedStyle(document.documentElement)
+              .getPropertyValue('--secondaryColor').trim();
   window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY; // Current vertical scroll position
     const docHeight =
@@ -123,14 +125,16 @@ function PageScrollParsentage() {
       document.documentElement.clientHeight; // Viewport height
     const scrollPercent = Math.min((scrollTop / docHeight) * 100, 100); // Prevent exceeding 100%
     outCircle.style.transform = ` rotate( ${scrollPercent}deg)`;
-    circle.style.background = `conic-gradient(#4caf50 ${scrollPercent}%, #ccc ${scrollPercent}%)`;
+    
+    circle.style.background = `conic-gradient(var(--secondaryColor) ${scrollPercent}%, #ccc ${scrollPercent}%)`;
     percentageText.textContent = `${Math.round(scrollPercent)}%`; // Display rounded percentage
     if (scrollPercent > 95) {
       circle.style.background = "#cf142b";
       percentageText.style.display = "none";
       arrow.style.display = "flex"; // Indicate scrolling completion
     } else {
-      circle.style.background = `conic-gradient(#4caf50 ${scrollPercent}%, #ccc ${scrollPercent}%)`;
+      circle.style.background = `conic-gradient(var(--secondaryColor) ${scrollPercent}%, #ccc ${scrollPercent}%)`;
+
       percentageText.style.display = "flex";
       arrow.style.display = "none";
     }
@@ -695,3 +699,43 @@ function contactAnimation() {
 }
 contactAnimation();
 //!contactAnimation function end
+
+
+/* Animaiton color change star ================================*/
+
+function hexToRgb(hex) {
+  hex = hex.replace('#', '');
+  if (hex.length === 3) hex = hex.split('').map(h => h + h).join('');
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return `${r}, ${g}, ${b}`;
+}
+
+const select = document.getElementById('color-state');
+
+// Page load এ default variable থেকে rgb তৈরি
+function updateAnimationColor(color) {
+  let rgbColor;
+  if (color.startsWith('rgba')) {
+    rgbColor = color.replace(/rgba?\(|\s+|\)/g, '').split(',').slice(0, 3).join(', ');
+  } else {
+    rgbColor = hexToRgb(color);
+  }
+
+  document.documentElement.style.setProperty('--secondaryColor', color);
+  document.documentElement.style.setProperty('--secondaryColor-rgb', rgbColor);
+}
+
+// initial load: CSS default color নাও
+const defaultColor = getComputedStyle(document.documentElement).getPropertyValue('--secondaryColor').trim();
+updateAnimationColor(defaultColor);
+
+// select change
+select.addEventListener('change', () => {
+  updateAnimationColor(select.value);
+});
+
+
+/* Animaiton color change end ================================*/
