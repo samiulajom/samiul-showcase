@@ -735,11 +735,10 @@ aside section {
   overflow: hidden;
 }
 .sm-testimonial-cards .swiper-slide .text {
-
   padding-bottom: 20px;
   margin-bottom: 20px;
   color: var(--bc);
-  height: 300px;
+  height: 250px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--secondaryColor) transparent;
