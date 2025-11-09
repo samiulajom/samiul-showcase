@@ -176,25 +176,6 @@ body {
 /* Button styles end --------------------------------------- */
 /* Animation styles start ---------------------------------- */
 
-/* @keyframes lightingAnimation {
-  0% {
-    box-shadow: rgba(13, 170, 131, 0.2) 0px 7px 29px 0px;
-  }
-  25% {
-    box-shadow: rgba(13, 170, 131, 0.4) 0px 7px 29px 0px;
-  }
-  50% {
-    box-shadow: rgba(13, 170, 131, 0.5) 0px 7px 29px 0px;
-  }
-
-  75% {
-    box-shadow: rgba(13, 170, 131, 0.7) 0px 7px 29px 0px;
-  }
-  100% {
-    box-shadow: rgba(13, 170, 131, 0.8) 0px 7px 29px 0px;
-  }
-} */
-
 /* Animation using variable */
 @keyframes lightingAnimation {
   0% {
@@ -433,7 +414,7 @@ aside section {
 .banner .image-container {
   transform: rotateY(-10deg);
   max-width: 70%;
-  background: url(./../image/banner/samiul-2.png) no-repeat center;
+  background: url(./../image/banner/samiul-2.webp) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 10;
