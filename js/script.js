@@ -7,6 +7,7 @@ $(document).ready(function () {
 /*======================================================== */
 /* isotope function start
 /*======================================================== */
+
 function istopeFiterFun(btnParent, btn, itemParent, item) {
   let isotopeInitialized = false; // Flag to track if Isotope is initialized
   let $grid;
